@@ -1,0 +1,110 @@
+.example-full-width{
+    width: 50%;
+}
+
+/* change mat input color & Background & Font-Size On Focus */
+::ng-deep .mdc-text-field--focused:not(.mdc-text-field--disabled) .mdc-floating-label {
+   color:orange !important;  /* label color */
+   background-color: yellow; /* label background */
+   font-size: 20px !important; /* label font-size */
+   padding: 0 10px; /* label color */
+  }
+
+/* Change Mat-Input floating-Label ByeDefault Color */
+::ng-deep .mdc-text-field:not(.mdc-text-field-disabled) .mdc-floating-label {
+    color:green !important;
+}
+
+/* Change label font position */
+::ng-deep .mat-mdc-text-field-wrapper .mat-mdc-form-field-flex .mdc-mdc-floating-label {
+    top:10px !important;
+    font-size: 12px !important;
+}
+
+
+::ng-deep .mat-mdc-text-field .mdc-text-field--outlined .mdc-notched-outline--upgraded 
+.mdc-floating-label--float-above {
+    color:#fff !important;
+    top:28px !important;
+    position: relative !important;
+    font-weight: 300 !important;
+    background-color: lightblue !important;
+}
+
+/* change mat input color */
+::ng-deep .mdc-text-field:not(.mdc-text-field--disabled) .mdc-text-field__input {
+    color:pink !important;
+}
+
+/* change mat input placeholder */
+::ng-deep .mdc-text-field:not(.mdc-text-field--disabled) .mdc-text-field__input::placeholder {
+    color:brown !important;
+    font-size: 12px;
+}
+
+/* change caret color on focus  */
+::ng-deep .mdc-text-field .mdc-text-field__input {
+   caret-color: blue !important;
+}
+
+/* change mat input bordered color & width  */
+/* ::ng-deep .mdc-text-field--outlined:not(.mdc-text-field--disabled) .mdc-notched-outline__leading, 
+::ng-deep .mdc-text-field--outlined:not(.mdc-text-field--disabled) .mdc-notched-outline__notch, 
+::ng-deep .mdc-text-field--outlined:not(.mdc-text-field--disabled) .mdc-notched-outline__trailing {
+   border-color: blue !important;
+   border-width: 2px !important;
+} */
+
+
+/* hover to change outlined color same as border color in matInput  */
+/* ::ng-deep .mdc-text-field--outlined:not(.mdc-text-field--disabled):not(.mdc-text-field--focused):hover .mdc-notched-outline__leading, 
+::ng-deep .mdc-text-field--outlined:not(.mdc-text-field--disabled):not(.mdc-text-field--focused):hover .mdc-notched-outline__notch, 
+::ng-deep .mdc-text-field--outlined:not(.mdc-text-field--disabled):not(.mdc-text-field--focused):hover .mdc-notched-outline__trailing {
+   border-color: lightgreen !important;
+   border-width: 2px !important;
+} */
+
+
+/* focus to change border color in mat-input   */
+::ng-deep .mdc-text-field--outlined:not(.mdc-text-field--disabled).mdc-text-field--focused .mdc-notched-outline__leading, 
+::ng-deep .mdc-text-field--outlined:not(.mdc-text-field--disabled).mdc-text-field--focused .mdc-notched-outline__notch, 
+::ng-deep .mdc-text-field--outlined:not(.mdc-text-field--disabled).mdc-text-field--focused .mdc-notched-outline__trailing {
+ 
+   border-color: green !important;
+   border-width: 2px !important;
+}
+
+/* change mat for-field input height   */
+::ng-deep .mat-mdc-text-field-wrapper {
+   height: 35px !important;
+}
+/* change mat for-field inside input with text position   */
+::ng-deep .mat-mdc-input-element {
+   top:-10px !important;
+   position: relative;
+}
+/* change mat for-field invalid color   */
+::ng-deep .mdc-text-field--invalid .mdc-notched-outline > * {
+   border-color: red !important;
+ }
+
+
+
+
+
+
+
+
+
+/* // change input left side border-radius */
+/* ::ng-deep .mdc-text-field--outlined .mdc-notched-outline .mdc-notched-outline__leading {
+  border-top-left-radius: var(--mdc-shape-small, 12px) !important;
+  border-bottom-left-radius: var(--mdc-shape-small, 12px) !important;
+} */
+
+/* // change input right side border-radius */
+/* ::ng-deep .mdc-text-field--outlined .mdc-notched-outline .mdc-notched-outline__trailing {
+  border-top-right-radius: var(--mdc-shape-small, 12px) !important;
+  border-bottom-right-radius: var(--mdc-shape-small, 12px) !important;
+} */
+

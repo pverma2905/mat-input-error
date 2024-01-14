@@ -1,0 +1,12 @@
+<h1>Mat FormField Custimization</h1>
+<br>
+<br>
+<form [formGroup]="myForm" (ngSubmit)="submitForm()" novalidate>
+<mat-form-field appearance="outline" class="example-full-width" >
+    <mat-label >Name</mat-label>
+    <input matInput placeholder="Enter Your Name" formControlName="name">
+    <mat-error *ngIf="myForm.get('name')?.touched">
+        You must provide a<strong>name</strong>
+     </mat-error>
+</mat-form-field>
+</form>
